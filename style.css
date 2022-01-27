@@ -69,10 +69,14 @@ section .section-title{
     }
 
 #quienes-somos {
-    min-height: 90vh;
+    min-height: 110vh;
     padding: 24px;
     box-sizing: border-box;
-    background: linear-gradient(120deg, var(--inv-purple), var(--inv-dark-blue));
+    background-image: url(./img/wave.svg), linear-gradient(120deg, var(--inv-purple), var(--inv-dark-blue));
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 101%;
+    background-color: black;
     color: white;
 }
     #quienes-somos h1{
@@ -110,8 +114,16 @@ section .section-title{
             color: white;
             font-weight: 900;
             font-size: 2rem;
+            max-width: 15rem;
         }
 
 #nuestros-servicios{
-    
+    padding: 24px;
+    min-height: 90vh;
 }
+    #nuestros-servicios h1{
+        font-size: 3rem;
+    }
+    #nuestros-servicios .card{
+        
+    }
