@@ -1,0 +1,117 @@
+:root{
+    --inv-orange: #FF3C00;
+    --inv-purple: #8800FF;
+    --inv-dark-blue: #251758;
+    --inv-light-orange: #F8B08A;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/**
+ ** NAVIGATION 
+ **/
+nav {
+    height: 40px;
+    font-size: 1rem;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+    nav img {
+        height: 40px;
+    }
+    nav ul{
+        margin: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+        nav ul li{
+            flex: 1;
+        }
+        nav ul a{
+            text-decoration: none;
+        }
+
+/**
+ ** SECTIONS 
+ **/
+
+section .section-title{
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #d6a155;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid;
+    display: inline-block;
+}
+
+#hero {
+    height: 90vh;
+    padding: 24px;
+    box-sizing: border-box;
+    background: /* var(--inv-purple) */ url(./img/hero-bg-edited.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    color: black;
+}
+    #hero h1{
+        font-size: 4rem;
+        width: 700px;
+    }
+    #hero p{
+        font-size: 1.5rem;
+        width: 600px;
+    }
+
+#quienes-somos {
+    min-height: 90vh;
+    padding: 24px;
+    box-sizing: border-box;
+    background: linear-gradient(120deg, var(--inv-purple), var(--inv-dark-blue));
+    color: white;
+}
+    #quienes-somos h1{
+        font-size: 3rem;
+        width: 600px;
+    }
+    #quienes-somos p{
+        font-size: 1.5rem;
+    }
+    #quienes-somos #steps{
+        list-style: none;
+        margin: 16px 0px;
+        padding: 0px;
+        display: flex;
+    }
+        #quienes-somos #steps li{
+            flex: 1;
+            position: relative;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+        }
+        #quienes-somos li .step-number{
+            /* color: rgba(255, 255, 255, 0.4); */
+            color: var(--inv-dark-blue);
+            font-size: 200px;
+            font-weight: 900;
+            position: absolute;
+        }
+        #quienes-somos li .step-description{
+            position: relative;
+            z-index: 1;
+            color: white;
+            font-weight: 900;
+            font-size: 2rem;
+        }
+
+#nuestros-servicios{
+    
+}
