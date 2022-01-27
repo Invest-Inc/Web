@@ -9,6 +9,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 /**
@@ -36,6 +37,12 @@ nav {
             text-decoration: none;
         }
 
+footer{
+    background-color: black;
+    padding: 64px;
+    color: white;
+}
+
 /**
  ** SECTIONS 
  **/
@@ -47,6 +54,9 @@ section .section-title{
     padding-bottom: 0.5rem;
     border-bottom: 1px solid;
     display: inline-block;
+    margin-right: auto;
+    text-align: left !important;
+    float: left;
 }
 
 #hero {
@@ -120,10 +130,90 @@ section .section-title{
 #nuestros-servicios{
     padding: 24px;
     min-height: 90vh;
+    background: linear-gradient(white, rgb(224, 218, 229));
 }
     #nuestros-servicios h1{
         font-size: 3rem;
     }
-    #nuestros-servicios .card{
-        
+    #nuestros-servicios #roles{
+        display: flex;
+        column-gap: 24px;
+        row-gap: 24px;
+    }
+        #nuestros-servicios #roles .card{
+            border-radius: 24px;
+            padding: 24px;
+            flex: 1;
+            color: rgba(255, 255, 255, 0.7);
+            background-color: var(--inv-orange);
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: soft-light;
+        }
+        #nuestros-servicios #role-investor{
+            background: url(./img/investor.jpg);
+        }
+        #nuestros-servicios #role-entrepeneur{
+            background: url(./img/entrepeneur.jpg);
+        }
+            #nuestros-servicios #roles h2{
+                font-weight: 900;
+                font-size: 4rem;
+                margin: 1rem 0;
+            }
+            #nuestros-servicios #roles ul{
+                font-size: 2rem;
+                color: white;
+            }  
+                #nuestros-servicios #roles li{
+                    margin: 1rem 0;
+                }
+
+#el-futuro-de-invertir{
+    padding: 24px;
+    background-color: rgb(224, 218, 229);
+    text-align: right;
+    min-height: 90vh;
+}
+    #el-futuro-de-invertir h1{
+        font-size: 4rem;
+        font-weight: 900;
+        background: linear-gradient(130deg, var(--inv-orange), var(--inv-purple));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: 600px;
+        display: inline-block;
+    }
+    #el-futuro-de-invertir p{
+        font-size: 1.7rem;
+        width: 800px;
+        margin-left: auto;
+    }
+    #el-futuro-de-invertir #features-cont {
+        margin-top: 4rem;
+        display: flex;
+        text-align: left;
+        column-gap: 24px;
+    }
+    #el-futuro-de-invertir #features-cont > div {
+        text-align: left;
+        padding: 24px;
+        background-color: white;
+        display: inline-block;
+        border-radius: 24px;
+    }
+    #el-futuro-de-invertir #features-cont h2{
+        font-size: 3rem;
+        margin: 1rem 0;
+    }
+    #el-futuro-de-invertir #features-cont ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        font-size: 1.5rem;
+    }
+    #el-futuro-de-invertir #features-cont li{
+        padding: 1rem 0;
+        border-bottom: 0.5px solid;
     }
