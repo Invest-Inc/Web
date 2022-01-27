@@ -71,11 +71,11 @@ section .section-title{
 }
     #hero h1{
         font-size: 4rem;
-        width: 700px;
+        max-width: 700px;
     }
     #hero p{
         font-size: 1.5rem;
-        width: 600px;
+        max-width: 600px;
     }
 
 #quienes-somos {
@@ -91,7 +91,7 @@ section .section-title{
 }
     #quienes-somos h1{
         font-size: 3rem;
-        width: 600px;
+        max-width: 600px;
     }
     #quienes-somos p{
         font-size: 1.5rem;
@@ -101,6 +101,7 @@ section .section-title{
         margin: 16px 0px;
         padding: 0px;
         display: flex;
+        overflow: auto;
     }
         #quienes-somos #steps li{
             flex: 1;
@@ -182,12 +183,12 @@ section .section-title{
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        width: 600px;
+        max-width: 600px;
         display: inline-block;
     }
     #el-futuro-de-invertir p{
         font-size: 1.7rem;
-        width: 800px;
+        max-width: 800px;
         margin-left: auto;
     }
     #el-futuro-de-invertir #features-cont {
